@@ -8,3 +8,11 @@ kubectl config set-cluster aws@cluster --server=https://ip:6443 --certificate-au
 
 => set users info in config file :-
 kubectl config set-credentials username --client-certificate=path/to/user.crt --client-key=path/to/user.key --kubeconfig name.kubeconfig
+
+### to add context 
+
+kubectl config set-context context name --cluster cluster name --user=(username) --namespace=(namespace name) --kubeconfig config. file 
+
+## too add current context 
+
+kubectl config current-context --kubeconfig config. file 
