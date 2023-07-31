@@ -15,4 +15,4 @@ kubectl config set-context context name --cluster cluster name --user=(username)
 
 ## too add current context 
 
-kubectl config current-context --kubeconfig config. file 
+kubectl config use-context (context name) --kubeconfig config. file 
